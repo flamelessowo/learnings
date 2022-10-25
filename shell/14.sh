@@ -1,7 +1,8 @@
 #!/bin/bash
 #Mon Oct 24 15:18:03 EEST 2022
 
-for FILE in "${"test/*.jpg"}"
+for FILE in *.jpg
 do
-	echo "$FILE"
+	mv "$FILE" "`date "+%Y%M%D"`$FILE"
 done
+
