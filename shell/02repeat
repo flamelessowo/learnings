@@ -1,0 +1,4 @@
+#!/bin/bash
+#Sat Oct 22 01:51:29 EEST 2022
+HI="this is completely fu****"
+echo $HI
