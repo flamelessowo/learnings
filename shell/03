@@ -1,4 +1,4 @@
 #!/bin/bash
 #Sat Oct 22 01:56:06 EEST 2022
-HNAME=`hostname`
-echo "This script is running on $HNAME where $HNAME is the output of the "hostname" command."
+HNAME=$(hostname)
+echo "This script is running on $HNAME where $HNAME is the output of the \"hostname\" command."

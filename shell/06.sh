@@ -2,16 +2,16 @@
 #Sun Oct 23 11:41:45 EEST 2022
 
 echo "Enter file name: "
-read VAL
+read -r VAL
 if [ -d "$VAL" ]
 then 
-	echo "File "$VAL" is directory file"
+	echo "File $VAL is directory file"
 elif [ -L "$VAL"  ]
 then
-	echo "File "$VAL" is a sym link"
+	echo "File $VAL is a sym link"
 elif [ -f "$VAL" ]
 then
-	echo "File "$VAL" is a regular file"
+	echo "File $VAL is a regular file"
 else
-	echo "File "$VAL" is a sym link or another type"
+	echo "File $VAL is a sym link or another type"
 fi

@@ -9,7 +9,7 @@ function display_name() {
 function file_count () {
 	local DIR="$1"
 	display_name "$DIR"
-	echo `ls "$DIR" | wc -l` 
+	echo $(ls "$DIR" | wc -l) 
 	return 0;
 }
 
